@@ -9,6 +9,9 @@
 
 4. In `database.yml` change name of database react_rails_router_starter to `<project-name>` using TODOS
 
+- Link to faker: https://github.com/faker-ruby/faker
+- Link to Bootstrap: https://react-bootstrap.netlify.app/components/alerts
+
 5. run `rails db:create db:migrate db:seed`
 6. `rails s -p 3001` to start rails server
 7. `cd client && yarn start` to start yarn server
