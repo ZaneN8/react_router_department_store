@@ -7,7 +7,7 @@
 2. `cd <project-name>`
 3. run `bundle install`
 
-4. database.yml change name of database react_rails_router_starter to **<project-name>**
+4. database.yml change name of database react_rails_router_starter to _<project-name>_
 
 5. run `rails db:create db:migrate db:seed`
 6. `rails s -p 3001`

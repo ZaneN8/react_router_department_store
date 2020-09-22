@@ -23,13 +23,15 @@ default: &default
 
 development:
   <<: *default
-  database: react_rails_router_starter_f20_development
+  # TODO Change to new project name
+  database: react_rails_router_starter_development
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: react_rails_router_starter_f20
+  #username: react_rails_router_starter
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +59,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: react_rails_router_starter_f20_test
+  # TODO Change to new project name
+  database: react_rails_router_starter_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: react_rails_router_starter_f20_production
-  username: react_rails_router_starter_f20
-  password: <%= ENV['REACT_RAILS_ROUTER_STARTER_F20_DATABASE_PASSWORD'] %>
+  # TODO Change to new project name
+  database: react_rails_router_starter_production
+  username: react_rails_router_starter
+  password: <%= ENV['REACT_RAILS_ROUTER_STARTER_DATABASE_PASSWORD'] %>
