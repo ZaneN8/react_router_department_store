@@ -2,16 +2,16 @@
 
 ## Steps to setup
 
-1. `git clone <project-url> <project-name>`
+1. `git clone git@github.com:ZaneN8/react_rails_router_starter.git <project-name>`
 
 2. `cd <project-name>`
 3. run `bundle install`
 
-4. database.yml change name of database react_rails_router_starter to _<project-name>_
+4. In `database.yml` change name of database react_rails_router_starter to `<project-name>`
 
 5. run `rails db:create db:migrate db:seed`
-6. `rails s -p 3001`
-7. `cd client && yarn`
+6. `rails s -p 3001` to start rails server
+7. `cd client && yarn start` to start yarn server
 
 ### handle git
 
