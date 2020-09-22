@@ -1,27 +1,30 @@
-# Starter Project
+Department Store 2.0
 
-## Steps to setup
+- This will be a 2-day assignment\*
 
-1. `git clone git@github.com:ZaneN8/react_rails_router_starter.git <project-name>`
+Build a new rails/react app using your starter code.
 
-2. `cd <project-name>`
-3. run `bundle install`
+Create your models (e.g department and item).
 
-4. In `database.yml` change name of database react_rails_router_starter to `<project-name>` using TODOS
+Implement all CRUD actions.
 
-- Link to faker: https://github.com/faker-ruby/faker
-- Link to Bootstrap: https://react-bootstrap.netlify.app/components/alerts
+Use axios to fetch data.
+Use React Router v4 to create multiple pages.
 
-5. run `rails db:create db:migrate db:seed`
-6. `rails s -p 3001` to start rails server
-7. `cd client && yarn start` to start yarn server
+Style the app with something
 
-### handle git
+Push the assignment up to GitHub.
 
-- you can ether remove the remote and add your own, or you can remove the git repo. Remove the remote keeps the commit history from the starter project. `rm -rf .git` will completely remove it.
+What To Focus On:
+State: What is it, how to access it, and how to update it.
+Props: What is it, how to access it, how to pass it, and how it differs from state.
+How is passing data different when using React Router? What other tools does it give us to help develop this application? (hint: history/match)
+BONUS OBJECTIVES:
 
-8. remove origin `git remote rm origin`
-   `git remote add origin <ssh-link>`
-9. or `rm -rf .git` && `git init`
+1. Add a comment model. (An item "has many" comments). Rework your routes accordingly.
 
-10. start servers
+2. Create comment controller. Display comments when viewing an item.
+
+3. Rating Model (calculate average in model method).
+
+4. Add-to-cart functionality.
