@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Api::ThingsControllerTest < ActionDispatch::IntegrationTest
+class SampleTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

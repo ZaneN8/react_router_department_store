@@ -7,7 +7,7 @@ const NavBar = () => {
     <div style={styles.navbar}>
       <Link to="/">Home</Link>
       <span style={{ marginRight: "10px" }}></span>
-      <Link to="/thingsDemo">Things</Link>
+      <Link to="/samplesDemo">Samples</Link>
     </div>
   );
 };
