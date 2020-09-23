@@ -1,5 +1,5 @@
 class Api::ItemsController < ApplicationController
-  before_action :set_item
+  before_action :set_department
   
   def index
     render json: @department.items
@@ -21,13 +21,12 @@ class Api::ItemsController < ApplicationController
 
   private
 
-  def item_params
-    params.require(:review).permit(:text, :department_id)
-  end
-
-  def set_item
+  def set_department
     @department = Department.find(params[:department_id])
   end
 
-    
+  def item_params
+    params.require(:item).permit(:name, :price, :department_id)
+  end
+
 end

@@ -10,7 +10,7 @@ const DepartmentForm = ({ history }) => {
     console.log(name);
     Axios.post("/api/departments", { name, description })
       .then((res) => {
-        history.push("/departments"); // TODO
+        history.push("/departments"); // TODO Needs to go back to the departments page
       })
       .catch((err) => {
         alert("Error: Create did not work");

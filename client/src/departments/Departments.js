@@ -38,7 +38,13 @@ const Departments = () => {
         <Card.Body>
           <Card.Title>{department.name}</Card.Title>
           <Card.Text>{department.description}</Card.Text>
-          <Button variant="primary">Items</Button>
+          <Button
+            variant="primary"
+            as={Link}
+            to={`/departments/${department.id}`}
+          >
+            Items
+          </Button>
         </Card.Body>
       </Card>
     ));
