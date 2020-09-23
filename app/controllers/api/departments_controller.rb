@@ -2,7 +2,6 @@ class Api::DepartmentsController < ApplicationController
   before_action :set_department, only: [:show, :update, :destroy]
   
     def index
-      binding.pry
       render json: Department.all
     end
   
@@ -38,7 +37,7 @@ class Api::DepartmentsController < ApplicationController
       end
   
       def department_params
-        params.require(:sample).permit(:name, :description)
+        params.require(:department).permit(:name, :description)
       end
       
   end

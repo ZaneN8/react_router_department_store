@@ -1,6 +1,7 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Departments = () => {
   const [departments, setDepartments] = useState([]);
@@ -46,6 +47,9 @@ const Departments = () => {
   return (
     <div>
       <Card.Header as="h1">Department Stores</Card.Header>
+      <Button as={Link} to="/departments/new">
+        New
+      </Button>
       <Card>{renderDepartments()}</Card>
     </div>
   );

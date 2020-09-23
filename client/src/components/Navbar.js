@@ -7,8 +7,6 @@ const NavBar = () => {
     <div style={styles.navbar}>
       <Link to="/">Home</Link>
       <span style={{ marginRight: "10px" }}></span>
-      <Link to="/samplesDemo">Samples</Link>
-      <span style={{ marginRight: "10px" }}></span>
       <Link to="/departments">Departments</Link>
       <span style={{ marginRight: "10px" }}></span>
     </div>
