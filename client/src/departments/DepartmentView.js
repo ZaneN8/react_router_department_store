@@ -42,7 +42,7 @@ const DepartmentView = ({ history, match }) => {
   return (
     <div>
       <Card.Header as="h1">{department.name}</Card.Header>
-      <Button as={Link} to="/departments/:department_id/new">
+      <Button as={Link} to={`/departments/${department.id}/new`}>
         New Item
       </Button>
       {/* <Card>

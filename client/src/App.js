@@ -16,6 +16,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/departments" component={Departments} />
           <Route exact path="/departments/new" component={DepartmentForm} />
+          <Route
+            exact
+            path="/departments/:department_id/items/:id/edit"
+            component={ItemForm}
+          />
           <Route exact path="/departments/:id" component={DepartmentView} />
           <Route
             exact
@@ -29,3 +34,6 @@ function App() {
 }
 
 export default App;
+
+// lets just get the form rendering first and show id's
+// show values in form
