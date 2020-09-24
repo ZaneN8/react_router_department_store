@@ -7,6 +7,7 @@ const DepartmentForm = ({ history }) => {
   const [description, setDescription] = useState("");
 
   function handleSubmit(e) {
+    e.preventDefault();
     Axios.post("/api/departments", { name, description })
       .then((res) => {
         history.push("/departments"); // TODO Needs to go back to the departments page
@@ -37,6 +38,11 @@ const DepartmentForm = ({ history }) => {
         />
       </Form.Group>
       <Button type="submit">Submit</Button>
+      <br />
+      <br />
+      <Button variant="dark" onClick={history.goBack}>
+        Back
+      </Button>
     </Form>
   );
 };

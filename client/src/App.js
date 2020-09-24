@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar";
 import DepartmentForm from "./departments/DepartmentForm";
 import Departments from "./departments/Departments";
 import DepartmentView from "./departments/DepartmentView";
+import ItemForm from "./departments/ItemForm";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
           <Route exact path="/departments" component={Departments} />
           <Route exact path="/departments/new" component={DepartmentForm} />
           <Route exact path="/departments/:id" component={DepartmentView} />
+          <Route
+            exact
+            path="/departments/:department_id/new"
+            component={ItemForm}
+          />
         </Switch>
       </>
     </>

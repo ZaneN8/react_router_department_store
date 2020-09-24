@@ -1,6 +1,7 @@
 import Axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Item from "./Item";
 import ItemForm from "./ItemForm";
 
@@ -41,11 +42,14 @@ const DepartmentView = ({ history, match }) => {
   return (
     <div>
       <Card.Header as="h1">{department.name}</Card.Header>
-      <Card>
+      <Button as={Link} to="/departments/:department_id/new">
+        New Item
+      </Button>
+      {/* <Card>
         <ItemForm />
-      </Card>
+      </Card> */}
       <Card>{renderItems()}</Card>
-      <Button color="teal" onClick={history.goBack}>
+      <Button variant="dark" onClick={history.goBack}>
         Back
       </Button>
     </div>
