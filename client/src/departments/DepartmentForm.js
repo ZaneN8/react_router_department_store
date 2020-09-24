@@ -7,7 +7,6 @@ const DepartmentForm = ({ history }) => {
   const [description, setDescription] = useState("");
 
   function handleSubmit(e) {
-    console.log(name);
     Axios.post("/api/departments", { name, description })
       .then((res) => {
         history.push("/departments"); // TODO Needs to go back to the departments page
